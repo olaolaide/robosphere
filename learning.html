@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RoboSphere | Learning &amp; Resources</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<header class="header glass-nav">
+    <nav class="navbar">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon">
+                <img src="/images/logo.svg" alt="RoboSphere logo"/>
+            </div>
+            <span class="logo-text">RoboSphere</span>
+        </a>
+
+        <div class="nav">
+            <div class="btn-container">
+                <a class="btn" href="login.html">Login</a>
+                <a class="btn" href="register.html">Register</a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="applications.html">Applications</a>
+                </li>
+                <li class="nav-link">
+                    <a href="benefits.html">Benefits</a>
+                </li>
+                <li class="nav-link active">
+                    <a href="learning.html">Learning</a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">About Us</a>
+                </li>
+                <li class="nav-link">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<main class="learn-main">
+    <!-- ── Hero ────────────────────────────────────────── -->
+    <section class="learn-hero">
+        <div class="learn-hero-text">
+            <h1 class="learn-title">
+                Empowering the
+                <span class="gradient-text">Next Generation</span>
+            </h1>
+            <p class="learn-subtitle">
+                Access industrial-grade documentation, curated open-source robotics
+                projects, and expert-led tutorials designed for the future of
+                automation.
+            </p>
+        </div>
+
+        <!-- Search bar -->
+        <div class="learn-search-wrap">
+            <svg
+                    class="learn-search-icon"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+            >
+                <circle cx="11" cy="11" r="8"/>
+                <path d="m21 21-4.35-4.35"/>
+            </svg>
+            <input
+                    class="learn-search-input"
+                    type="text"
+                    placeholder="Search documentation, tutorials, and components..."
+            />
+        </div>
+    </section>
+
+    <!-- ── Resource Categories ─────────────────────────── -->
+    <section class="learn-resources">
+        <div class="learn-resources-header">
+            <div>
+                <h2 class="learn-resources-title">Core Resources</h2>
+                <p class="learn-resources-sub">
+                    Structured paths for every stage of development.
+                </p>
+            </div>
+        </div>
+
+        <div class="resource-grid">
+            <!-- Documentation -->
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                                d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-1 14H7v-2h10v2zm0-4H7v-2h10v2zm0-4H7V6h10v2z"
+                        />
+                    </svg>
+                </div>
+                <h3 class="resource-title">Documentation</h3>
+                <p class="resource-desc">
+                    Technical manuals, API references, and hardware schemas for modern
+                    robotics kits.
+                </p>
+                <div class="resource-footer">
+                    <span class="resource-count">1,240 Articles</span>
+                    <a class="resource-link" href="#">
+                        Explore
+                        <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Video Tutorials -->
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                                d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5v-9l6 4.5-6 4.5z"
+                        />
+                    </svg>
+                </div>
+                <h3 class="resource-title">Video Tutorials</h3>
+                <p class="resource-desc">
+                    Modules ranging from "Getting Started" basics to advanced
+                    Kinematics and AI integration.
+                </p>
+                <div class="resource-footer">
+                    <span class="resource-count">85 Courses</span>
+                    <a class="resource-link" href="#">
+                        Watch
+                        <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Open Source -->
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                                d="M17 12h-5v5h5v-5zM16 1v2H8V1H6v2H5c-1.11 0-1.99.9-1.99 2L3 19c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2h-1V1h-2zm3 18H5V8h14v11z"
+                        />
+                    </svg>
+                </div>
+                <h3 class="resource-title">Open Source</h3>
+                <p class="resource-desc">
+                    A curated list of GitHub-linked repositories with full contributor
+                    stats and hardware lists.
+                </p>
+                <div class="resource-footer">
+                    <span class="resource-count">412 Repos</span>
+                    <a class="resource-link" href="#">
+                        Clone
+                        <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+
+            <!-- Community -->
+            <div class="resource-card">
+                <div class="resource-icon">
+                    <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path
+                                d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                        />
+                    </svg>
+                </div>
+                <h3 class="resource-title">Community</h3>
+                <p class="resource-desc">
+                    Join active discussions, Q&amp;A sessions, and collaborative
+                    technical troubleshooting.
+                </p>
+                <div class="resource-footer">
+              <span class="resource-online">
+                <span class="online-dot"></span>
+                2.4k Online
+              </span>
+                    <a class="resource-link" href="#">
+                        Join
+                        <svg
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2.5"
+                        >
+                            <path d="M5 12h14M12 5l7 7-7 7"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="learn-bottom-grid">
+        <!-- Latest Updates -->
+        <div class="learn-updates">
+            <h3 class="learn-section-title">
+                <svg
+                        viewBox="0 0 24 24"
+                        fill="currentColor"
+                        xmlns="http://www.w3.org/2000/svg"
+                >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+
+                    <g
+                            id="SVGRepo_tracerCarrier"
+                            stroke-linecap="round"
+                            stroke-linejoin="round"
+                    />
+
+                    <g id="SVGRepo_iconCarrier">
+                        <path
+                                fill-rule="evenodd"
+                                clip-rule="evenodd"
+                                d="M22 12C22 17.5228 17.5228 22 12 22C6.47715 22 2 17.5228 2 12C2 6.47715 6.47715 2 12 2C17.5228 2 22 6.47715 22 12ZM16.0303 8.96967C16.3232 9.26256 16.3232 9.73744 16.0303 10.0303L11.0303 15.0303C10.7374 15.3232 10.2626 15.3232 9.96967 15.0303L7.96967 13.0303C7.67678 12.7374 7.67678 12.2626 7.96967 11.9697C8.26256 11.6768 8.73744 11.6768 9.03033 11.9697L10.5 13.4393L12.7348 11.2045L14.9697 8.96967C15.2626 8.67678 15.7374 8.67678 16.0303 8.96967Z"
+                                fill="#0004ff"
+                        />
+                    </g>
+                </svg>
+                Latest Updates
+            </h3>
+
+            <ol class="updates-list">
+                <li class="update-item">
+                    <div class="update-thumb">
+                        <img
+                                src="/images/pid-controller.png"
+                                alt="Industrial robotic arm working on microchips"
+                        />
+                    </div>
+                    <div class="update-body">
+                        <div class="update-meta">
+                            <span class="update-tag tag-blue">GUIDE</span>
+                            <span class="update-time">2 hours ago</span>
+                        </div>
+                        <h4 class="update-title">
+                            Implementing PID Controllers for Quadruped Balance
+                        </h4>
+                    </div>
+                </li>
+
+                <li class="update-item">
+                    <div class="update-thumb">
+                        <img
+                                src="/images/ros2.png"
+                                alt="Futuristic robot face looking forward"
+                        />
+                    </div>
+                    <div class="update-body">
+                        <div class="update-meta">
+                            <span class="update-tag tag-purple">VIDEO</span>
+                            <span class="update-time">7 hours ago</span>
+                        </div>
+                        <h4 class="update-title">
+                            Mastering ROS2 Humble: Advanced Node Communication
+                        </h4>
+                    </div>
+                </li>
+
+                <li class="update-item">
+                    <div class="update-thumb">
+                        <img
+                                src="/images/opencv.png"
+                                alt="Circuit board close up macro shot"
+                        />
+                    </div>
+                    <div class="update-body">
+                        <div class="update-meta">
+                            <span class="update-tag tag-green">REPO</span>
+                            <span class="update-time">Yesterday</span>
+                        </div>
+                        <h4 class="update-title">
+                            OpenCV 4.9 Wrapper for Real-time Kinematic Correction
+                        </h4>
+                    </div>
+                </li>
+            </ol>
+        </div>
+
+        <!-- Sidebar: Trending + Cert -->
+        <aside class="learn-sidebar">
+            <h3 class="learn-section-title" style="margin-bottom: 1.5rem">
+                Trending Topics
+            </h3>
+
+            <div class="trending-tags">
+                <a class="trend-tag" href="#">#ComputerVision</a>
+                <a class="trend-tag" href="#">#SLAMEngines</a>
+                <a class="trend-tag" href="#">#Actuators</a>
+                <a class="trend-tag" href="#">#LiDARData</a>
+                <a class="trend-tag" href="#">#SwarmRobotics</a>
+            </div>
+        </aside>
+    </div>
+</main>
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="footer">
+    <div class="footer-bottom">
+        <div class="socials">
+            <a href="">
+                <img
+                        src="/images/facebook.svg"
+                        alt="Facebook"
+                        class="social-icon"
+                />
+            </a>
+            <a href="">
+                <img src="/images/x.svg" alt="Facebook" class="social-icon"/>
+            </a>
+            <a href="">
+                <img src="/images/github.svg" alt="Facebook" class="social-icon"/>
+            </a>
+        </div>
+        <div class="footer-bottom-links">
+            <a href="#">Cookie Settings</a>
+            <a href="#">Feedback</a>
+        </div>
+        <p>&copy; 2026 RoboSphere Inc. All rights reserved.</p>
+    </div>
+</footer>
+</body>
+</html>

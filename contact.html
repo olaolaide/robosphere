@@ -1,0 +1,232 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Contact Us</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
+    <link
+            href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap"
+            rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/style.css"/>
+</head>
+<body>
+<header class="header glass-nav">
+    <nav class="navbar">
+        <a href="index.html" class="header-logo">
+            <div class="logo-icon">
+                <img src="/images/logo.svg" alt="RoboSphere logo"/>
+            </div>
+            <span class="logo-text">RoboSphere</span>
+        </a>
+
+        <div class="nav">
+            <div class="btn-container">
+                <a class="btn" href="login.html">Login</a>
+                <a class="btn" href="register.html">Register</a>
+            </div>
+
+            <ul class="nav-links">
+                <li class="nav-link">
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="nav-link">
+                    <a href="applications.html">Applications</a>
+                </li>
+                <li class="nav-link">
+                    <a href="benefits.html">Benefits</a>
+                </li>
+                <li class="nav-link">
+                    <a href="learning.html">Learning</a>
+                </li>
+                <li class="nav-link">
+                    <a href="about.html">About Us</a>
+                </li>
+                <li class="nav-link active">
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+</header>
+
+<!-- ── Main ──────────────────────────────────────────── -->
+<main class="contact-main">
+    <!-- Page heading -->
+    <div class="contact-heading">
+        <h1 class="contact-title">Get in Touch with Our Experts</h1>
+        <p class="contact-subtitle">
+            Connect with our global technical support team or visit our
+            headquarters. We typically respond within 2 hours for enterprise
+            inquiries.
+        </p>
+    </div>
+
+    <!-- Two-column layout -->
+    <div class="contact-grid">
+        <!-- ── LEFT: Contact Form ───────────────────────── -->
+        <div class="glass-panel-contact">
+            <form class="contact-form" action="#" method="POST">
+                <!-- Name + Email row -->
+                <div class="form-row-2">
+                    <div class="form-field">
+                        <label class="field-label" for="fullname">Full Name</label>
+                        <input
+                                class="field-input"
+                                type="text"
+                                id="fullname"
+                                name="fullname"
+                                placeholder="John Connor"
+                        />
+                    </div>
+                    <div class="form-field">
+                        <label class="field-label" for="cemail">Email Address</label>
+                        <input
+                                class="field-input"
+                                type="email"
+                                id="cemail"
+                                name="email"
+                                placeholder="j.connor@cyberdyne.com"
+                        />
+                    </div>
+                </div>
+
+                <!-- Department select -->
+                <div class="form-field">
+                    <label class="field-label" for="department"
+                    >Department / Subject</label
+                    >
+                    <div class="select-wrap">
+                        <select
+                                class="field-input field-select"
+                                id="department"
+                                name="department"
+                        >
+                            <option>Technical Support</option>
+                            <option>Sales Inquiry</option>
+                            <option>Partnership Opportunities</option>
+                            <option>Media Relations</option>
+                        </select>
+                        <svg
+                                class="select-arrow"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                        >
+                            <path d="m6 9 6 6 6-6"/>
+                        </svg>
+                    </div>
+                </div>
+
+                <!-- Message textarea -->
+                <div class="form-field">
+                    <label class="field-label" for="message">Message</label>
+                    <textarea
+                            class="field-input field-textarea"
+                            id="message"
+                            name="message"
+                            rows="5"
+                            placeholder="Tell us about your project requirements..."
+                    ></textarea>
+                </div>
+
+                <!-- Submit -->
+                <button class="contact-submit" type="submit">
+                    Send Mission Briefing
+                    <svg
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            stroke-width="2.5"
+                    >
+                        <path d="M22 2 11 13M22 2 15 22 11 13 2 9l20-7z"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
+
+        <!-- ── RIGHT: Info cards + map ──────────────────── -->
+        <div class="contact-info-col">
+            <!-- Info cards row -->
+            <div class="info-cards">
+                <div class="info-card info-card-blue">
+                    <div class="info-card-icon info-icon-blue">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                    d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="info-card-title">Global HQ</h3>
+                    <p class="info-card-text">
+                        1024 Silicon Valley Blvd<br/>
+                        San Francisco, CA 94107
+                    </p>
+                </div>
+
+                <div class="info-card info-card-cyan">
+                    <div class="info-card-icon info-icon-cyan">
+                        <svg viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                    d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zm-2 12H6v-2h12v2zm0-3H6V9h12v2zm0-3H6V6h12v2z"
+                            />
+                        </svg>
+                    </div>
+                    <h3 class="info-card-title">24/7 Support</h3>
+                    <p class="info-card-text">
+                        +1 (800) ROBO-HUB<br/>
+                        support@robosphere.io
+                    </p>
+                </div>
+            </div>
+
+            <!-- Google Maps embed -->
+            <div class="contact-map">
+                <div class="embed-map-responsive">
+                    <div class="embed-map-container">
+                        <iframe
+                                class="embed-map-frame"
+                                src="https://maps.google.com/maps?width=600&height=400&hl=en&q=University%20of%20East%20london&t=&z=14&ie=UTF8&iwloc=B&output=embed"
+                        ></iframe>
+                        <div class="map-overlay"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- ── FOOTER ─────────────────────────────────────── -->
+<footer class="footer">
+    <div class="footer-bottom">
+        <div class="socials">
+            <a href="">
+                <img
+                        src="/images/facebook.svg"
+                        alt="Facebook"
+                        class="social-icon"
+                />
+            </a>
+            <a href="">
+                <img src="/images/x.svg" alt="Facebook" class="social-icon"/>
+            </a>
+            <a href="">
+                <img src="/images/github.svg" alt="Facebook" class="social-icon"/>
+            </a>
+        </div>
+        <div class="footer-bottom-links">
+            <a href="#">Privacy Policy</a>
+            <a href="#">Terms Of Service</a>
+            <a href="#">Cookie Settings</a>
+        </div>
+        <p>
+            &copy; <span id="year"></span> RoboSphere Inc. All rights reserved.
+        </p>
+    </div>
+</footer>
+</body>
+<script>
+    document.getElementById("year").textContent = new Date().getFullYear().toString();
+</script>
+</html>
