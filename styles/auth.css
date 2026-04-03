@@ -1,0 +1,314 @@
+*,
+::before,
+::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  color: #f1f5f9;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  /* Tech grid background */
+  background-color: #0f0f23;
+  background-image:
+    radial-gradient(
+      circle at 50% 50%,
+      rgba(0, 4, 255, 0.15) 0%,
+      transparent 50%
+    ),
+    linear-gradient(rgba(0, 4, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(0, 4, 255, 0.05) 1px, transparent 1px);
+  background-size:
+    100% 100%,
+    40px 40px,
+    40px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ── Main Container ───────────────────────────────── */
+.container {
+  position: relative;
+  z-index: 1;
+  width: 100%;
+  max-width: 28rem;
+}
+
+/* ── Logo Block ───────────────────────────────────── */
+.logo-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.logo-icon-wrap {
+  background: rgba(0, 4, 255, 0.2);
+  border: 1px solid rgba(0, 4, 255, 0.3);
+  border-radius: 0.75rem;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-icon-wrap svg {
+  width: 2.5rem;
+  height: 2.5rem;
+  color: #0004ff;
+  fill: currentColor;
+}
+
+.logo-block h1 {
+  font-size: 1.875rem;
+  font-weight: 700;
+  letter-spacing: -0.025em;
+  color: #ffffff;
+}
+
+.logo-block p {
+  margin-top: 0.5rem;
+  color: #94a3b8;
+  font-size: 0.9rem;
+}
+
+/* ── Glass Card ───────────────────────────────────── */
+.card {
+  background: rgba(255, 255, 255, 0.03);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.8);
+  border-radius: 0.75rem;
+  padding: 2rem 2.5rem;
+}
+
+.card-heading {
+  margin-bottom: 2rem;
+}
+
+.card-heading h2 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.card-heading p {
+  font-size: 0.875rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+/* ── Form ─────────────────────────────────────────── */
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+/* Floating label input */
+.field {
+  position: relative;
+}
+
+.field input {
+  display: block;
+  width: 100%;
+  padding: 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  outline: none;
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+}
+
+.field input::placeholder {
+  color: transparent;
+}
+
+.field input:focus {
+  border-color: #0004ff;
+  box-shadow: 0 0 0 2px rgba(0, 4, 255, 0.25);
+}
+
+.field label {
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  color: #94a3b8;
+  font-size: 1rem;
+  pointer-events: none;
+  transform-origin: left top;
+  transition:
+    transform 0.2s,
+    color 0.2s,
+    font-size 0.2s;
+}
+
+/* Float label up when focused or filled */
+.field input:focus + label,
+.field input:not(:placeholder-shown) + label {
+  transform: translateY(-1.4rem) scale(0.8);
+  color: #8385ed;
+  background: #27275b;
+  padding: 0 0.25rem;
+}
+
+/* Password field with toggle */
+.field-pw {
+  position: relative;
+}
+
+.field-pw input {
+  padding-right: 3rem;
+}
+
+.pw-toggle {
+  position: absolute;
+  right: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  transition: color 0.2s;
+}
+
+.pw-toggle:hover {
+  color: #ffffff;
+}
+
+.pw-toggle svg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/* Forgot password */
+.forgot-row {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: -0.5rem;
+}
+
+.forgot-link {
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #0004ff;
+  transition: color 0.2s;
+}
+
+.forgot-link:hover {
+  color: rgba(0, 4, 255, 0.7);
+}
+
+/* Submit button */
+.btn-submit {
+  width: 100%;
+  padding: 1rem;
+  background: #0004ff;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 0 4px 20px rgba(0, 4, 255, 0.2);
+  transition:
+    background 0.3s,
+    transform 0.1s;
+}
+
+.btn-submit:hover {
+  background: linear-gradient(135deg, #0004ff 0%, #6e00ff 100%);
+}
+
+.btn-submit:active {
+  transform: scale(0.98);
+}
+
+/* ── Divider ──────────────────────────────────────── */
+.divider {
+  display: flex;
+  justify-content: space-between;
+  margin: 1rem;
+  align-items: center;
+}
+.divider hr {
+  height: 1px;
+  width: 30%;
+  border-color: #1e293b;
+}
+
+/* ── Social Buttons ───────────────────────────────── */
+.social-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.btn-social {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.625rem 1rem;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.5rem;
+  color: #ffffff;
+  font-size: 0.875rem;
+  font-weight: 500;
+  font-family: "Inter", sans-serif;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-social:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+.btn-social svg {
+  width: 1.25rem;
+  height: 1.25rem;
+  flex-shrink: 0;
+}
+
+/* ── Auth Link ─────────────────────────────────── */
+.auth-row {
+  text-align: center;
+  margin-top: 2rem;
+  font-size: 0.875rem;
+  color: #94a3b8;
+}
+
+.auth-row a {
+  color: #0004ff;
+  font-weight: 600;
+  margin-left: 0.25rem;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
