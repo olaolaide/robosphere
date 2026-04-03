@@ -228,9 +228,7 @@ Place all images in an `/images/` folder at your project root. Images without a 
 | `team2.jpg` | About — Marcus Thorne | 400×400px square |
 | `team3.jpg` | About — Sarah Chen | 400×400px square |
 | `team4.jpg` | About — David Miller | 400×400px square |
-| `update1.jpg` | Learning — update feed | 240×160px |
-| `update2.jpg` | Learning — update feed | 240×160px |
-| `update3.jpg` | Learning — update feed | 240×160px |
+
 
 ---
 
